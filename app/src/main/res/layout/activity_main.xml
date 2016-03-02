@@ -9,8 +9,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.timetrax.timetrax.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:id="@+id/mainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/timer1Button"
+            android:text="MTP"
+            android:layout_weight="1"
+            android:onClick="startTimer1"
+            android:checked="false"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/timer2Button"
+            android:text="Team Support"
+            android:layout_weight="1"
+            android:onClick="startTimer2"
+            android:checked="false"
+            />
+
+
+    </LinearLayout>
+
 </RelativeLayout>
